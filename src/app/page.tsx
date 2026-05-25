@@ -1,0 +1,36 @@
+(ECB Style Layout with Sovereign Capital Headline)
+
+import React from 'react';
+import { Shield, Landmark, Globe2, ArrowRight } from 'lucide-react';
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-white">
+      <header className="fixed top-0 w-full z-50 bg-white border-b border-slate-100 px-10 h-16 flex justify-between items-center shadow-sm">
+        <h1 className="text-2xl font-black text-[#0A1F3F] tracking-tighter">EATG<span className="text-[#C9A84C]">BANK</span></h1>
+        <nav className="flex gap-10 text-[11px] font-black uppercase text-slate-500 tracking-widest">
+          <span className="text-[#1E5BA8] cursor-pointer">Monetary Policy</span>
+          <span className="hover:text-[#0A1F3F] cursor-pointer">Explainers</span>
+          <span className="hover:text-[#0A1F3F] cursor-pointer">Statistics</span>
+          <span className="hover:text-[#0A1F3F] cursor-pointer">The Euro</span>
+        </nav>
+      </header>
+      <section className="pt-40 pb-32 bg-[#0A1F3F] text-white relative">
+        <div className="container mx-auto px-10 relative z-10">
+          <span className="bg-[#C9A84C] text-[#0A1F3F] px-4 py-1.5 rounded-sm text-[11px] font-black uppercase tracking-[0.2em]">Institutional Access</span>
+          <h2 className="text-9xl font-bold mt-12 tracking-tighter leading-[0.85]">Orchestrating <br/><span className="text-[#C9A84C]">Sovereign</span> Capital.</h2>
+          <p className="text-2xl text-slate-400 mt-12 max-w-2xl leading-relaxed">Serving the world's most sophisticated principals through the EATG Bank Sovereign Protocol and Stratum-0 asset immunity.</p>
+          <div className="flex gap-8 mt-20">
+            <button className="bg-[#C9A84C] text-[#0A1F3F] px-14 py-6 font-black uppercase text-xs tracking-widest hover:scale-105 transition-all shadow-2xl">Become a Client</button>
+            <button className="border-2 border-white/10 text-white px-14 py-6 font-black uppercase text-xs tracking-widest hover:bg-white/5 transition-all">View Master Matrix</button>
+          </div>
+        </div>
+      </section>
+      <div className="bg-slate-50 border-y border-slate-200 py-12 px-10 flex justify-around text-center">
+        <div><p className="text-[10px] font-bold text-slate-400 uppercase mb-2">Deposit Facility</p><p className="text-3xl font-bold text-[#0A1F3F]">4.00%</p></div>
+        <div><p className="text-[10px] font-bold text-slate-400 uppercase mb-2">Main Refinancing</p><p className="text-3xl font-bold text-[#0A1F3F]">4.50%</p></div>
+        <div><p className="text-[10px] font-bold text-slate-400 uppercase mb-2">AUM Vaulted</p><p className="text-3xl font-bold text-[#0A1F3F]">$842.1B</p></div>
+      </div>
+    </div>
+  );
+}
